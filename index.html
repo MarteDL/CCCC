@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css">
+    <title>CCCC - The Yummiest Game</title>
+</head>
+
+<body>
+
+<header>
+    <div class="container text-center">
+        <h1>Chocolate Chip Cookie Clicker</h1>
+        <p>Like the original Cookie Clicker but even yummier. Not for people who don't like sugar.</p>
+    </div>
+</header>
+
+<main>
+
+    <div class="container text-center mb-5">
+        <h2>If you want a cookie (or thousand), you better click on it!</h2>
+    </div>
+
+    <!-- cookie count -->
+
+    <div class="row">
+        <div class="col-6 text-center">
+            <h3>My cookie count</h3>
+            <span id="cookie-count">0</span>
+        </div>
+
+        <!-- store title-->
+        <div class="col-6 text-center">
+            <h2>Store</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- the cookie clicker button -->
+        <div class="col-6 text-center">
+            <button type="button" id="cookie-clicker" class="m-5">
+                <img src="cookie.jpg" alt="chocolate chip cookie">
+            </button>
+        </div>
+
+        <!-- different store items -->
+        <div class="col-6 text-center mt-5">
+            <div class="m-2">
+                <button type="button" id="cookie-multiplier"
+                        title="Multiplies the cookies you can collect per click.">
+                    <p>Multiply by <span id="multiply-number"></span></p>
+                    <p>Cost: <span id="multiply-cost"></span> cookies</p>
+                </button>
+            </div>
+            <div class="m-2">
+                <button type="button" id="auto-click" title="Auto-clicks every 10 seconds.">
+                    <p>Auto-click</p>
+                    <p>Cost: <span id="auto-click-cost"></span> cookies</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container text-center fixed-bottom">
+        <p>
+            made by MarteDL
+        </p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="cccc.js"></script>
+</body>
+</html>
